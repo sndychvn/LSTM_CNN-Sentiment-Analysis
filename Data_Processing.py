@@ -30,13 +30,13 @@ def split_data(filename):                                  #seperates the mixed 
 
 
 def load_data(posfile, negfile, max_limit, randomize=True):     #get the datset
-    pos_file = list(open(posfile, "r").readlines())             #opening the file from posfile and removing all the unwanted spaces and storing in pos_file
+    pos_file = list(open(posfile, "r").readlines())             #opening the file from posfile and removing all the leading spaces and storing in pos_file
     pos_file = [s.strip() for s in pos_file]
 
-    neg_file = list(open(negfile, "r").readlines())             #opening the file from negfile and removing all the unwanted spaces and storing in neg file
+    neg_file = list(open(negfile, "r").readlines())             #opening the file from negfile and removing all the leading spaces and storing in neg file
     neg_file = [s.strip() for s in neg_file]
 
-    if (randomize):
+    if (randomize):                                             #shuffles the data positions randomly
         rd.shuffle(pos_file)
         rd.shuffle(neg_file)
 
@@ -47,7 +47,7 @@ def load_data(posfile, negfile, max_limit, randomize=True):     #get the datset
     x_text = [clean_data(s) for s in x_text]
 
 
-    pos_labels = [[0,1] for _ in pos_file]                      #generates label
+    pos_labels = [[0,1] for _ in pos_file]                      #generates label if a list "pos_file" has 200 values, a pos_lables of 200 [0,1] is generated
     neg_labels = [[1,0] for _ in neg_file]
 
 
