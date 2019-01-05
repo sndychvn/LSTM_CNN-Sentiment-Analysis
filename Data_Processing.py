@@ -47,7 +47,8 @@ def load_data(posfile, negfile, max_limit, randomize=True):     #get the datset
     x_text = [clean_data(s) for s in x_text]
 
 
-    pos_file =
+    pos_labels = [[0,1] for _ in pos_file]                      #generates label
+    neg_labels = [[1,0] for _ in neg_file]
 
 
 
