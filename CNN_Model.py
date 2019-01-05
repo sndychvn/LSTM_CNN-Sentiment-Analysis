@@ -11,7 +11,12 @@ class CNN(object):              #Used an embedding layer, a Convolutional Layer,
         l2_loss = tf.constant(0.0)                                                              #keeping track of L2 regularization loss (optional)
 
         with tf.device('/cpu:0'), tf.name_scope("embedding"):                                   #allocating GPUs and using embedding layers
-            self.W = tf.Variable(tf.)
+            self.W = tf.Variable(tf.random_uniform(shape=[vocab_size, embedding_size], minval=-1.0, maxval=1.0), name="W")
+            self.embedded_chars = tf.nn.embedding_lookup(self.W, self.input_x)
+            self.embedded_chars_expanded = tf.expand_dims(self.embedded_chars, -1)
+
+            
+
 
 
 
