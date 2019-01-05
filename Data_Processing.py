@@ -1,5 +1,7 @@
 import csv
 import random as rd
+import re
+import numpy as np
 
 def split_data(filename):                                  #seperates the mixed file into positive and negative
     positive_file = open("positive_"+filename,"w+")        #creates empty files to store the
