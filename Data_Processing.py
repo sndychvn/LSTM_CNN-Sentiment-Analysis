@@ -87,12 +87,25 @@ def clean_data(string):
     return string.strip().lower()
 
 
-def batch_iter(data, batch_size, num_epochs, shuffle=True):        #generates a batch iterator for a dataset
+def batch_iter(data, batch_size, num_epochs, shuffle=True):                     #generates a batch iterator for a dataset
     data = np.array(data)
     data_size = len(data)
+    num_batch_per_epoch = int((len(data)-1)/batch_size) + 1
+    for epoch in range(num_epochs):                                             #shuffles the batch at each epoch
+        if shuffle:
+            shuffle_indices = np.random.permutation(np.arange(data_size))       #an index of the size of data would be created and would be shuffled
+            shuffled_data = data[shuffle_indices]                               #this same shuffled index would be prefixed to the data, where shuffled_data would contain the shuffled index elements
+        else:
+            shuffled_data = data
+
+        for batch_num in range(num_batch_per_epoch):
+            start_index = batch_num * batch_size
+            end_index = min((batch_num + 1) * batch_size, data_size)
+            yield shuffled_data[start_index:end_index]
 
 
-
+if __name__ == "__main__":
+    seperate_dataset("small.txt")
 
 
 
