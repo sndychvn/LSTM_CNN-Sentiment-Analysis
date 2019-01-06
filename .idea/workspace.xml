@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb98264f-b619-4d8e-aa9e-168b89a39670" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN_LSTM_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_LSTM_Model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +32,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8667" />
+          <entry key="py" value="8668" />
           <entry key="txt" value="489" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="56" />
-          <entry key="Python" value="8667" />
+          <entry key="Python" value="8668" />
           <entry key="Scratch" value="433" />
         </counts>
       </usages-collector>
@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LSTM_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+            <state relative-caret-position="350">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1546793548555" expanded="true" signature="89:94" ph="..." />
@@ -98,17 +98,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://D:/Downloads/Face-Recognition-Using-OpenCV-and-Python/Face-Recognition-Using-OpenCV-and-Python/face_rec_movies.py">
+        <entry file="file://$PROJECT_DIR$/CNN_LSTM_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CNN_LSTM_Model.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -136,16 +134,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CNN_LSTM_Model.py" />
         <option value="$PROJECT_DIR$/LSTM_CNN_Model.py" />
         <option value="$PROJECT_DIR$/Data_Processing.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/CNN_Model.py" />
         <option value="$PROJECT_DIR$/LSTM_Model.py" />
+        <option value="$PROJECT_DIR$/CNN_LSTM_Model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -276,7 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -308,9 +306,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Code" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CNN_LSTM_Model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LSTM_CNN_Model.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -334,6 +329,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Downloads/Face-Recognition-Using-OpenCV-and-Python/Face-Recognition-Using-OpenCV-and-Python/face_rec_movies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CNN_Model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -346,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LSTM_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        <state relative-caret-position="350">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1546793548555" expanded="true" signature="89:94" ph="..." />
@@ -356,10 +361,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Downloads/Face-Recognition-Using-OpenCV-and-Python/Face-Recognition-Using-OpenCV-and-Python/face_rec_movies.py">
+    <entry file="file://$PROJECT_DIR$/CNN_LSTM_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="119">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
