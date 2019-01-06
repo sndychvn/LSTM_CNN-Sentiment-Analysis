@@ -7,22 +7,28 @@ class CNN(object):
         self.input_x = tf.placeholder(tf.int32, [None, sequence_length], name="input_x")        #Placeholders for input, output and dropout
         self.input_y = tf.placeholder(tf.float32, [None, num_classes], name="input_y")
         self.dropout_keep_prob = tf.placeholder(tf.float32, name="dropout_keep_prob")
+        l2_loss = tf.constant(0.0)                                                               #keeping track of L2 regularization loss (optional)
 
-        l2_loss = tf.constant(0.0)                                                              #keeping track of L2 regularization loss (optional)
+        #1. EMBEDDING LAYER
         with tf.device('/cpu:0'), tf.name_scope("embedding"):                                   #allocating GPUs and using embedding layers
             self.W = tf.Variable(tf.random_uniform(shape=[vocab_size, embedding_size], minval=-1.0, maxval=1.0), name="W")
             self.embedded_chars = tf.nn.embedding_lookup(self.W, self.input_x)                  #explaination lookup https://stackoverflow.com/questions/34870614/what-does-tf-nn-embedding-lookup-function-do
             self.embedded_chars_expanded = tf.expand_dims(self.embedded_chars, -1)              #adding another dimension to the Tensor (expand_dims)
-
         pooled_outputs = []
-        for i, filter_size in enumerate(filter_sizes):
+
+        #2. CONVOLUTIONAL LAYER
+        for i, filter_size in enumerate(filter_sizes):                                          #size of the filter (3x3 or 5x5 ......)
             with tf.name_scope("conv-maxpool-%s" % filter_size):
                 #Convolution Layer
                 filter_shape = [filter_size, embedding_size, 1, num_filters]
+
                 W = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1), name="W")         #creating a 4D Tensor for weights
                 b = tf.Variable(tf.constant(0.1, shape=[num_filters]), name="b")                 #creating a bias with 0.1 as value with a shape equal to number of filters (i.e if num_filters = 100) shape would be (100,1)
+
                 conv = tf.nn.conv2d(self.embedded_chars_expanded, W, strides=[1, 1, 1, 1], padding="VALID", name="conv")        #providing a 4D Tensor to the CONV Layer
-                h = tf.nn.relu(tf.nn.bias_add(conv,b), name="relu")                               #apply non-linearity
+
+                h = tf.nn.relu(tf.nn.bias_add(conv,b), name="relu")                               #apply non-linearity ReLu as pooling requires a non-linearity to be added
+
                 pooled = tf.nn.max_pool(h, ksize=[1, sequence_length - filter_size + 1, 1, 1], strides=[1, 1, 1, 1], padding='VALID', name="pool")
                 pooled_outputs.append(pooled)
 
@@ -55,5 +61,3 @@ class CNN(object):
             correct_predictions = tf.equal(self.predictions, tf.argmax(self.input_y, 1))
             self.accuracy = tf.reduce_mean(tf.cast(correct_predictions, "float"), name="accuracy")
         print("CNN is Loaded!")
-
-
