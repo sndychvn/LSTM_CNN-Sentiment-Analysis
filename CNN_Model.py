@@ -1,5 +1,8 @@
 import tensorflow as tf
 import numpy as np
+import re
+from IPython import embed
+import random
 
 class CNN(object):
                                                                                                 ##Used an embedding layer, a Convolutional Layer, max-pooling and Softmax layer

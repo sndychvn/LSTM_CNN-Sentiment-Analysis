@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb98264f-b619-4d8e-aa9e-168b89a39670" name="Default Changelist" comment="" />
+    <list default="true" id="cb98264f-b619-4d8e-aa9e-168b89a39670" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CNN_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSTM_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM_Model.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +33,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7680" />
+          <entry key="py" value="8667" />
           <entry key="txt" value="489" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="56" />
-          <entry key="Python" value="7680" />
+          <entry key="Python" value="8667" />
           <entry key="Scratch" value="433" />
         </counts>
       </usages-collector>
@@ -63,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CNN_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -83,7 +86,16 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LSTM_Model.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1546793548555" expanded="true" signature="89:94" ph="..." />
+                <marker date="1546793548555" expanded="true" signature="205:215" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -116,20 +128,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LSTM_Model.py" />
         <option value="$PROJECT_DIR$/CNN_LSTM_Model.py" />
         <option value="$PROJECT_DIR$/LSTM_CNN_Model.py" />
         <option value="$PROJECT_DIR$/Data_Processing.py" />
-        <option value="$PROJECT_DIR$/CNN_Model.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/CNN_Model.py" />
+        <option value="$PROJECT_DIR$/LSTM_Model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="1030" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -271,8 +300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CNN_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -280,7 +309,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LSTM_Model.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1546793548555" expanded="true" signature="89:94" ph="..." />
+            <marker date="1546793548555" expanded="true" signature="205:215" ph="..." />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
